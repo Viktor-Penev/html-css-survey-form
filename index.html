@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey From</title>
+</head>
+<body>
+  <div class="main">
+    <h1 id="title">Hogwarts Student Survey From</h1>
+    <p id="description">Please find here-after a survey form explicitly for an aspiring witch or wizard attending Hogwarts School of Witchcraft and the path of magic he or she would like to take.</p>
+  </div>
+  <form id="survey-form">
+    <div>
+      <label class="inputLabel" for="name" id="name-label">Name:</label>
+      <input class="input" id="name" type="text" placeholder="Enter your wizard name" required />
+    </div>
+    <div>
+      <label class="inputLabel" for="email" id="email-label">Email:</label>
+      <input class="input" id="email" type="email" placeholder="Enter your magic email" required />
+    </div>
+    <div>
+      <label class="inputLabel" for="number" id="number-label">Which student year are you in: (Optional)</label>
+      <input class="input" id="number" type="number" min="1" max="7" placeholder="Between 1 and 7" />
+    </div>
+    <div>
+      <label class="inputLabel" for="dropdown" id="dropdown-label">Select your house: </label>
+      <select id="dropdown" class="input">
+        <option value="" selected disabled hidden>Select house</option>
+        <option value="Gryffindor"><span>
+          <img src="https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/1280x1280/products/88361/91122/Harry-Potter-Gryffindor-Crest-Official-wall-mounted-cardboard-cutout-buy-now-at-star__95823.1507640354.jpg?c=2" width="15" height="15" alt="Gryffindor crest">
+        </span> Gryffindor</option>
+        <option value="Hufflepuff">Hufflepuff</option>
+        <option value="Ravenclaw">Ravenclaw</option>
+        <option value="Slytherin">Slytherin</option>
+      </select>
+    </div>
+    <div class="section">
+      <p class="inputLabel">Choose method of transportation: </p>
+    <input type="radio" id="Broom" name="transportation-method" value="Broom">
+    <label for="Broom">Broom</label><br>
+    <input type="radio" id="Floo-powder" name="transportation-method" value="Floo powder">
+    <label for="Floo-powder">Floo powder</label><br>
+      <input type="radio" id="portkey" name="transportation-method" value="Portkey">
+    <label for="portkey">Portkey</label>
+    </div>
+    <div class="section">
+      <p class="inputLabel">Which of these classes do you attend?</p>
+      <input type="checkbox" id="Transfiguration" name="Transfiguration" value="Transfiguration">
+      <label for="Transfiguration">Transfiguration</label><br>
+      <input type="checkbox" id="Herbology" name="Herbology" value="Herbology">
+      <label for="Herbology">Herbology</label><br>
+      <input type="checkbox" id="Divination" name="Divination" value="Divination">
+      <label for="Divination">Divination</label><br>
+      <input type="checkbox" id="Potions" name="Potions" value="Potions">
+      <label for="Potions">Potions</label><br>
+      <input type="checkbox" id="Charms" name="Charms" value="Charms">
+      <label for="Charms">Charms</label><br>
+      <input type="checkbox" id="defense" name="defense" value="Defense Against The Dark Arts">
+      <label for="defense">Defense Against The Dark Arts</label><br>
+    </div>
+    <div>
+      <label class="inputLabel" for="textarea">Commend your favorite professors: (Optional)</label>
+    </div>
+    <textarea id="textarea" name="experience" placeholder="You can commend up to three professors"></textarea>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</body>
+</html>
